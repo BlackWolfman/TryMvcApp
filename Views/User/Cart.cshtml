@@ -1,0 +1,68 @@
+﻿@model IEnumerable<TryMvcApp.Models.ProductModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Cart";
+}
+
+<div class="login_form page_wrapper">
+    
+    <h2>List of Products in Cart:</h2>
+    
+    <div style="text-align: left">
+        <table class="table" style="text-align: left;">
+            <tr>
+                <th>
+                    @Html.Label("Id")
+                </th>
+                <th>
+                    @Html.Label("Name")
+                </th>
+                <th>
+                    @Html.Label("Category")
+                </th>
+                <th>
+                    @Html.Label("Price")
+                </th>
+                <th>
+                    @Html.Label("Old price")
+                </th>
+                <th>
+                    @Html.Label("Description")
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.OldPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => product.Description)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Remove", "RemoveFromCart", new { Controller = "User", product.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        
+    </div>
+
+</div>
+

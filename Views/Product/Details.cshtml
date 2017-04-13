@@ -1,0 +1,75 @@
+﻿@model TryMvcApp.Models.ProductModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutProducts.cshtml";
+    ViewBag.Title = "Item details";
+}
+
+<div class="slider_banner items_list col-sm-offset-1 col-xs-12 col-sm-8">
+    <h2>Details about an item:</h2>
+
+    <div>
+        <hr />
+        
+        @if (Request.IsAuthenticated)
+        {
+            <div>
+                @Html.ActionLink("Add to Cart", "AddToCart", new { Controller = "User", Model.Id})
+            </div>
+            <div>
+                @Html.ActionLink("Add to Wishlist", "AddToWishlist", new { Controller = "User", Model.Id})
+            </div>
+        }
+        
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Category)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.OldPrice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.OldPrice, new { @style = "text-decoration:line-through;" })
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+        </dl>
+    </div>
+
+    @if (User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Edit", "Edit", new { Controller = "Product", id = Model.Id })
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "List", "Product")
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@model TryMvcApp.Models.UserModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Registration";
+}
+
+<div class="login_form page_wrapper">
+    <h2>Registration</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <legend>Enter Account credentials to create a user</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.UserName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserName)
+                @Html.ValidationMessageFor(model => model.UserName)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Password)
+            </div>
+            <div class="editor-label">
+                @Html.PasswordFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Role)
+            </div>
+            <div class="editor-label">
+                <span style="font-size: 20px; margin-right: 10px;">User @Html.RadioButton("Role", "User", new { @checked = "checked" })</span>
+                <span style="font-size: 20px; margin-left: 10px;">Admin @Html.RadioButton("Role", "Admin")</span>
+            </div>
+            <p>
+                @Html.ValidationSummary(true)
+                <input style="margin-top: 10px; width: 200px;" type="submit" value="Register User" />
+            </p>
+        </fieldset>
+    }
+</div>

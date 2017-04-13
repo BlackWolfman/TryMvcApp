@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "User Profile";
+}
+
+<div class="login_form page_wrapper">
+
+    <h2>You are authorized as "@User.Identity.Name"</h2>
+
+    @if (!User.IsInRole("User"))
+    {
+        if (!User.IsInRole("Admin"))
+        {
+            <h4><i>The role is OTHER</i></h4>
+        }
+        else
+        {
+            <h4><i>The role is - "Admin"</i></h4>
+            <div style="text-align: left;">
+                @Html.ActionLink("View Users list", "UserList", "User", null, new { @style = "color:#222;border:2px dotted #222;padding:8px;font-size:24px;text-decoration:underline;" })
+            </div>
+        }
+    }
+    else
+    {
+        <h4><i>The role is - "User"</i></h4>
+    }
+
+</div>

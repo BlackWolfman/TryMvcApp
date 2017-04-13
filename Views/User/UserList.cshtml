@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TryMvcApp.Models.UserModel>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Users List";
+}
+
+<div class="login_form page_wrapper">
+
+    <h2>List of created accounts:</h2>
+
+    <table class="table" style="text-align: left;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+        </tr>
+
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => user.Role)
+                </td>
+            </tr>
+        }
+
+        </table>
+    </div>

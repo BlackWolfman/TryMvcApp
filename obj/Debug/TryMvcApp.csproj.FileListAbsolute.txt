@@ -1,0 +1,153 @@
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\ApplicationInsights.config
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\csc.exe
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\csc.exe.config
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\csc.rsp
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\csi.exe
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\csi.rsp
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.AppContext.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.Collections.Immutable.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.IO.FileSystem.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\System.Reflection.Metadata.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\vbc.exe
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\vbc.exe.config
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\vbc.rsp
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\VBCSCompiler.exe
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\roslyn\VBCSCompiler.exe.config
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\TryMvcApp.dll.config
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\TryMvcApp.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\TryMvcApp.pdb
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Antlr3.Runtime.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\EntityFramework.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\EntityFramework.SqlServer.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.DependencyCollector.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.Web.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.WindowsServer.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.ApplicationInsights.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.Web.Infrastructure.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Newtonsoft.Json.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Helpers.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Mvc.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Optimization.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Razor.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.Deployment.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.Razor.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\WebGrease.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\EntityFramework.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\EntityFramework.SqlServer.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Helpers.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Mvc.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Optimization.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.Razor.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.Deployment.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\System.Web.WebPages.Razor.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Antlr3.Runtime.pdb
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Newtonsoft.Json.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.ApplicationInsights.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.DependencyCollector.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.WindowsServer.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\bin\Microsoft.AI.Web.xml
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\obj\Debug\TryMvcApp.csprojResolveAssemblyReference.cache
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\obj\Debug\TryMvcApp.dll
+E:\Temp\project backup\trymvcapp\v2.0 (registration)\TryMvcApp\obj\Debug\TryMvcApp.pdb
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\ApplicationInsights.config
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\csc.exe
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\csc.exe.config
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\csc.rsp
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\csi.exe
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\csi.rsp
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.AppContext.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.Collections.Immutable.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.IO.FileSystem.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\System.Reflection.Metadata.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\vbc.exe
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\vbc.exe.config
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\vbc.rsp
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\VBCSCompiler.exe
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\roslyn\VBCSCompiler.exe.config
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\TryMvcApp.dll.config
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\TryMvcApp.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\TryMvcApp.pdb
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Antlr3.Runtime.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\EntityFramework.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\EntityFramework.SqlServer.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.DependencyCollector.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.Web.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.WindowsServer.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.ApplicationInsights.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Web.Infrastructure.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Newtonsoft.Json.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Helpers.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Mvc.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Optimization.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Razor.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.Deployment.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.Razor.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\WebGrease.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\EntityFramework.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\EntityFramework.SqlServer.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Helpers.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Mvc.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Optimization.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.Razor.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.Deployment.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\System.Web.WebPages.Razor.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Antlr3.Runtime.pdb
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Newtonsoft.Json.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.ApplicationInsights.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.DependencyCollector.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.WindowsServer.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.AI.Web.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\obj\Debug\TryMvcApp.csprojResolveAssemblyReference.cache
+D:\Programming\C#\TryMvcApp\TryMvcApp\obj\Debug\TryMvcApp.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\obj\Debug\TryMvcApp.pdb
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Unity.Mvc5.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\WebActivatorEx.dll
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Programming\C#\TryMvcApp\TryMvcApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml

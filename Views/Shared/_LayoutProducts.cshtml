@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page_wrapper">
+    <div class="first_line_wrapper container-fluid">
+        <div class="row">
+            <div class="categories col-xs-12 col-sm-2 col-md-3">
+                <span>CATEGORIES</span>
+                @Html.ActionLink("All items", "List", "Product", null, new { @class = "category_item", @style = "text-align:center;" })
+                @Html.ActionLink("Cooling", "List", "Product", new { productCategory = "Cooling" }, new { @class = "category_item" })
+                @Html.ActionLink("Graphics Cards (GPUs)", "List", "Product", new { productCategory = "GraphicsCards" }, new { @class = "category_item" })
+                @Html.ActionLink("Memory Cards", "List", "Product", new { productCategory = "MemoryCards" }, new { @class = "category_item" })
+                @Html.ActionLink("Monitors", "List", "Product", new { productCategory = "Monitors" }, new { @class = "category_item" })
+                @Html.ActionLink("Motherboards", "List", "Product", new { productCategory = "Motherboards" }, new { @class = "category_item" })
+                @Html.ActionLink("Power Supplies", "List", "Product", new { productCategory = "PowerSupplies" }, new { @class = "category_item" })
+                @Html.ActionLink("Processors (CPUs)", "List", "Product", new { productCategory = "Processors" }, new { @class = "category_item" })
+            </div>
+
+            <!-- ===================================== -->
+            @RenderBody()
+            <!-- ===================================== -->
+
+        </div>
+    </div>
+    <div class="second_line_wrapper container-fluid">
+        <div class="row">
+            <div class="hot_deals col-xs-12 col-sm-3">
+                <span>HOT DEALS<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-left pull-right"></i></span>
+                <div class="deal">
+                    <img src="~/Content/img/product1.png">
+                    <div>
+                        <i>Lorem ipsum dolor sit amet</i>
+                        <s>$ 100</s><b>$ 80</b>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img src="~/Content/img/product2.png">
+                    <div>
+                        <i>Lorem ipsum dolor sit amet</i>
+                        <s>$ 100</s><b>$ 80</b>
+                    </div>
+                </div>
+            </div>
+            <div class="new_products col-sm-offset-1 col-xs-12 col-sm-8">
+                <span>NEW PRODUCTS<i class="glyphicon glyphicon-chevron-right pull-right"></i><i class="glyphicon glyphicon-chevron-left pull-right"></i></span>
+                <div class="row">
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product1.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product2.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product3.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product4.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product5.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                    <div class="product_new col-xs-12 col-sm-4">
+                        <img src="~/Content/img/product6.png">
+                        <div>
+                            <i>Lorem ipsum dolor</i>
+                            <b> --> $ 80</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="brandbar">
+    <div class="brandbar_wrapper container-fluid">
+        <div class="row">
+            <div class="newsletter col-xs-12 col-sm-3">
+                <span>Sign Up for our Newsletter</span>
+                <input type="text" name="newsletter" placeholder="Enter your E-mail...">
+                <input class="pull-right" type="submit" name="subscribe" value="SUBSCRIBE">
+            </div>
+            <div class="brands col-xs-12 col-sm-9">
+                <div class="row">
+                    <img class="col-md-2" src="~/Content/img/brand1.png">
+                    <img class="col-md-2" src="~/Content/img/brand2.png">
+                    <img class="col-md-2" src="~/Content/img/brand3.png">
+                    <img class="col-md-2" src="~/Content/img/brand4.png">
+                    <img class="col-md-2" src="~/Content/img/brand5.png">
+                    <img class="col-md-2" src="~/Content/img/brand6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

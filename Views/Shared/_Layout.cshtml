@@ -1,0 +1,129 @@
+﻿@using TryMvcApp.Helpers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+    @Styles.Render("~/Content/Style.css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="header_wrapper container-fluid">
+            <div class="row">
+                <div class="header_left col-md-4 col-sm-4">
+                    <span>@Html.ActionLink("Some Cool LOGO.", "Index", "Home", null, new { @style = "color:#ddd;" })</span>
+                    <img src="~/Content/img/logo.jpg" width="150">
+                    <div>
+                        <i>Users Online at the moment: @CurrentUserHelper.OnlineUsersCount</i>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <span> @Html.ActionLink("Create data (Test)", "CreateData", "User", null, new { @style = "color:#ddd;" }) </span>__________
+                    <span> @Html.ActionLink("Users list (Test)", "UserList", "User", null, new { @style = "color:#ddd;" }) </span>
+                </div>
+                <div class="header_right col-md-offset-1 col-sm-offset-1 col-md-4 col-sm-4">
+                    <div class="account_line">
+                        <span> @Html.ActionLink("My Account", "Account", "User", null, new { @style = "color:#ddd;" }) </span>|
+                        <span> @Html.ActionLink("Cart", "Cart", "User", null, new { @style = "color:#ddd;" }) </span>|
+                        <span> @Html.ActionLink("Wishlist", "Wishlist", "User", null, new { @style = "color:#ddd;" }) </span>|
+                        
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <span> @Html.ActionLink("Log in", "Login", "User", null, new {@style = "color:#ddd;border-right:1px solid #ddd;padding-right:20px;"})</span>
+                            <span> @Html.ActionLink("Register", "Register", "User", null, new {@style = "color:#ddd;"}) </span>
+                        }
+                        else
+                        {
+                            <span> @Html.ActionLink("Log out", "Logout", "User", null, new { @style = "color:#ddd;" }) </span>
+                        }             
+                    </div>
+                    <form style="display: block;">
+                        @Html.TextBox("searchString", "", new { placeholder = "Search Your Item..." })
+                        <input type="submit" value="    ">
+                    </form>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <div class="cart_prev">
+                            <img src="~/Content/img/cart.png" style="width: 30px; margin-right: 8px">
+                            Total cost : $
+                            <b>@CurrentUserHelper.GetCartSummary()</b>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================== -->
+    @RenderBody()
+    <!-- ===================================== -->
+
+    <footer>
+        <div class="footer_wrapper container-fluid">
+            <div class="row">
+                <div class="info col-xs-12 col-sm-4 col-md-3">
+                    <div class="header_left">
+                        Some Cool LOGO.
+                        <img src="~/Content/img/logo.jpg" width="150">
+                        <p align="left">
+                            <b>Build your PC!</b><br>
+                            Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="list col-xs-12 col-sm-4 col-md-2">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CUSTOMER SERVICE</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">SITE MAP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="social col-xs-12 col-sm-4 col-md-2">
+                    <h3>FOLLOW US</h3>
+                    <ul>
+                        <a href="#"><li><img src="~/Content/img/social-1.png"> Facebook</li></a>
+                        <a href="#"><li><img src="~/Content/img/social-2.png"> Twitter</li></a>
+                        <a href="#"><li><img src="~/Content/img/social-3.png"> Google+</li></a>
+                    </ul>
+                </div>
+                <div class="social col-xs-12 col-sm-6 col-md-3">
+                    <h3>WE ACCEPT</h3>
+                    <ul>
+                        <a href="#"><li><img src="~/Content/img/card-1.png"> Visa Electron</li></a>
+                        <a href="#"><li><img src="~/Content/img/card-2.png"> Master Card</li></a>
+                        <a href="#"><li><img src="~/Content/img/card-3.png"> American Express</li></a>
+                    </ul>
+                </div>
+                <div class="contact col-xs-12 col-sm-6 col-md-2">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li style="list-style: none outside url(~/Content/img/place-marker.png);">UKRAINE, CHERNIVTSI<div>NEBESNOI SOTNI, 4B</div></li>
+                        <li style="list-style: none outside url(~/Content/img/phone-marker.png);">(+38)091 2345678<div>(+38)098 7654321</div></li>
+                        <li style="list-style: none outside url(~/Content/img/mail-marker.png);">tech_support@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <big>© 2017 BlackWolfman | All rights reserved.</big>
+    </div>
+
+    @Scripts.Render("~/scripts/jquery")
+    @Scripts.Render("~/scripts/bootstrap.js")
+    @Scripts.Render("~/scripts/bootstrap.min.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
