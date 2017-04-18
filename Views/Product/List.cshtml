@@ -1,4 +1,5 @@
-﻿@model IEnumerable<TryMvcApp.Models.ProductModel>
+﻿
+@model IEnumerable<TryMvcApp.Models.ProductModel>
 
 @{
     Layout = "~/Views/Shared/_LayoutProducts.cshtml";
@@ -6,7 +7,7 @@
 }
 
 <div class="slider_banner items_list col-sm-offset-1 col-xs-12 col-sm-8">
-    <h2>List of all items:</h2>
+    <h2>List of all products:</h2>
 
     @if (User.IsInRole("Admin"))
     {
@@ -30,33 +31,45 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
             <th></th>
         </tr>
 
-        @foreach (var item in Model)
+        @foreach (var product in Model)
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => product.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Category)
+                    @Html.DisplayFor(modelItem => product.Category)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    @Html.DisplayFor(modelItem => product.Price)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.OldPrice, new { @style = "text-decoration:line-through;" })
+                    @Html.DisplayFor(modelItem => product.OldPrice, new { @style = "text-decoration:line-through;" })
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Description)
+                    @Html.DisplayFor(modelItem => product.Description)
                 </td>
                 <td>
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }, new {@style = "padding-right:4px;" }) 
+                    @Html.DisplayFor(modelItem => product.Amount)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = product.Id }, new { @style = "padding-right:4px;" })
+                    
                     @if (User.IsInRole("Admin"))
                     {
-                        @Html.ActionLink("Edit", "Edit", new{ id = item.Id }, new {@style = "border-left:1px solid #000;padding-left:4px;padding-right:4px;" })
-                        @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @style = "border-left:1px solid #000;padding-left:4px;" }) 
+
+                        <div>
+                            @Html.ActionLink("Edit", "Edit", new { id = product.Id }, new { @style = "border-left:1px solid #000;padding-left:4px;padding-right:4px;" })
+                        </div>
+                        <div>
+                            @Html.ActionLink("Delete", "Delete", new { id = product.Id }, new { @style = "border-left:1px solid #000;padding-left:4px;" })
+                        </div>    
                     }
                 </td>
             </tr>

@@ -7,8 +7,8 @@ namespace TryMvcApp.Models
         public AppDbContext()
         : base("AppDbContext")
         {
-        //    Database.SetInitializer<AppDbContext>(new DropCreateDatabaseAlways<AppDbContext>());
-            Database.SetInitializer<AppDbContext>(null);
+            Database.SetInitializer<AppDbContext>(new DropCreateDatabaseAlways<AppDbContext>());
+        //    Database.SetInitializer<AppDbContext>(null);
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

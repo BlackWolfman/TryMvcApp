@@ -14,16 +14,16 @@ namespace TryMvcApp.Controllers
         
         public ActionResult List(string productCategory, string searchString)
         {
-            var categList = new List<string>();
+            List<string> categList = new List<string>();
 
-            var categQuery = from d in AppDb.Products
-                             select d.Category;
+            IQueryable<string> categQuery = from d in AppDb.Products
+                                                    select d.Category;
 
             categList.AddRange(categQuery.Distinct());
             ViewBag.productCategory = new SelectList(categList);
 
-            var products = from m in AppDb.Products
-                           select m;
+            IQueryable<ProductModel> products = from m in AppDb.Products
+                                                        select m;
             
             if (!string.IsNullOrEmpty(productCategory))
             {
@@ -45,7 +45,8 @@ namespace TryMvcApp.Controllers
                 return RedirectToAction("List", "Product");
             }
 
-            var product = AppDb.Products.Find(id);
+            ProductModel product = AppDb.Products.Find(id);
+
             if (product == null)
             {
                 return HttpNotFound();
@@ -62,9 +63,15 @@ namespace TryMvcApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Category,Price,OldPrice,Description")] ProductModel product)
+        public ActionResult Create(ProductModel product)
         {
             if (!ModelState.IsValid) return View(product);
+
+            if (AppDb.Products.Any(dbProduct => dbProduct.Name == product.Name && dbProduct.Price == product.Price))
+            {
+                AppDb.Products.First(dbProduct => dbProduct.Name == product.Name).Amount++;
+                return RedirectToAction("List", "Product");
+            }
 
             AppDb.Products.Add(product);
             AppDb.SaveChanges();
@@ -80,10 +87,11 @@ namespace TryMvcApp.Controllers
                 return RedirectToAction("List", "Product");
             }
 
-            var product = AppDb.Products.Find(id);
+            ProductModel product = AppDb.Products.Find(id);
+
             if (product == null)
             {
-                return HttpNotFound();
+                return RedirectToAction("List", "Product");
             }
 
             return View(product);
@@ -91,14 +99,14 @@ namespace TryMvcApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Category,Price,OldPrice,Description")] ProductModel product)
+        public ActionResult Edit(ProductModel product)
         {
             if (!ModelState.IsValid) return View(product);
 
             AppDb.Entry(product).State = System.Data.Entity.EntityState.Modified;
             AppDb.SaveChanges();
 
-            return RedirectToAction("List", "Product");
+            return RedirectToAction("Details", "Product", new {product.Id});
         }
 
         [Authorize(Roles = "Admin")]
@@ -109,21 +117,24 @@ namespace TryMvcApp.Controllers
                 return RedirectToAction("List", "Product");
             }
 
-            var product = AppDb.Products.Find(id);
+            ProductModel product = AppDb.Products.Find(id);
+
             if (product == null)
             {
-                return HttpNotFound();
+                return RedirectToAction("List", "Product");
             }
 
             return View(product);
         }
         
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult Delete(int id)
         {
-            var product = AppDb.Products.Find(id);
-            AppDb.Products.Remove(product);
+            ProductModel product = AppDb.Products.Find(id);
+
+            if (product != null) AppDb.Products.Remove(product);
+
             AppDb.SaveChanges();
 
             return RedirectToAction("List", "Product");

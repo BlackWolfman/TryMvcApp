@@ -16,7 +16,7 @@ namespace TryMvcApp.Models
         [Required]
         public string Name { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
+        //[RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$")]
         [Required]
         [StringLength(30)]
         public string Category { get; set; }
@@ -30,5 +30,8 @@ namespace TryMvcApp.Models
         public decimal OldPrice { get; set; }
 
         public string Description { get; set; }
+
+        [Required]
+        public int Amount { get; set; } = 1;
     }
 }

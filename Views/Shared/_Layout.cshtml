@@ -21,12 +21,12 @@
                     <span>@Html.ActionLink("Some Cool LOGO.", "Index", "Home", null, new { @style = "color:#ddd;" })</span>
                     <img src="~/Content/img/logo.jpg" width="150">
                     <div>
-                        <i>Users Online at the moment: @CurrentUserHelper.OnlineUsersCount</i>
+                        <i>Users Online at the moment: @CurrentUserHelper.OnlineUsers.Count</i>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3">
-                    <span> @Html.ActionLink("Create data (Test)", "CreateData", "User", null, new { @style = "color:#ddd;" }) </span>__________
-                    <span> @Html.ActionLink("Users list (Test)", "UserList", "User", null, new { @style = "color:#ddd;" }) </span>
+                    <span> @Html.ActionLink("Create data (Test)", "CreateData", "Account", null, new { @style = "color:#ddd;" }) </span>__________
+                    <span> @Html.ActionLink("Users list (Test)", "UserList", "Account", null, new { @style = "color:#ddd;" }) </span>
                 </div>
                 <div class="header_right col-md-offset-1 col-sm-offset-1 col-md-4 col-sm-4">
                     <div class="account_line">
@@ -36,8 +36,8 @@
                         
                         @if (!User.Identity.IsAuthenticated)
                         {
-                            <span> @Html.ActionLink("Log in", "Login", "User", null, new {@style = "color:#ddd;border-right:1px solid #ddd;padding-right:20px;"})</span>
-                            <span> @Html.ActionLink("Register", "Register", "User", null, new {@style = "color:#ddd;"}) </span>
+                            <span> @Html.ActionLink("Log in", "Login", "Account", null, new {@style = "color:#ddd;border-right:1px solid #ddd;padding-right:20px;"})</span>
+                            <span> @Html.ActionLink("Register", "Register", "Account", null, new {@style = "color:#ddd;"}) </span>
                         }
                         else
                         {

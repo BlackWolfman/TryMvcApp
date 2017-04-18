@@ -8,11 +8,12 @@ namespace TryMvcApp.Controllers
     {
         public AppDbContext AppDb;
 
-        public static UserModel CurrentUser = CurrentUserHelper.GetCurrentUser(System.Web.HttpContext.Current.User.Identity.Name);
+        public static UserModel CurrentUser;
 
         public MainController()
         {
             AppDb = new AppDbContext();
+            CurrentUser = CurrentUserHelper.GetCurrentUser(System.Web.HttpContext.Current.User.Identity.Name);
         }
     }
 }
